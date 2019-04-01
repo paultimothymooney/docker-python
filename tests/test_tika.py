@@ -1,13 +1,13 @@
 import unittest
 import tika
 from tika import parser
-tika.TikaClientOnly = True
+#tika.TikaClientOnly = True
 
-class TestTika(unittest.TestCase):
-    def test_tika(self):
-        image = '/input/tests/data/tikatest.jpg'
-        tika.initVM()
-        parsed = parser.from_file(image)
+#class TestTika(unittest.TestCase):
+#    def test_tika(self):
+#        image = '/input/tests/data/tikatest.jpg'
+#        tika.initVM()
+#        parsed = parser.from_file(image)
 
 # below from /chrismattmann/tika-python/tika/tests/test_tika.py
 #import unittest
