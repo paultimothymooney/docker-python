@@ -1,6 +1,7 @@
 import unittest
 import tika
 from tika import parser
+tika.TikaClientOnly = True
 
 class TestTika(unittest.TestCase):
     def test_tika(self):
