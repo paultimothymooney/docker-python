@@ -12,22 +12,21 @@ from tika import parser
 import unittest
 import tika.parser
 class CreateTest(unittest.TestCase):
-    "test for file types"
-
+    #"test for file types"
     def test_remote_pdf(self):
-        'parse remote PDF'
+        #'parse remote PDF'
         self.assertTrue(tika.parser.from_file(
             '/input/tests/data/tikatest1.pdf'))
     def test_remote_html(self):
-        'parse remote HTML' 
+        #'parse remote HTML' 
         self.assertTrue(tika.parser.from_file(
             '/input/tests/data/tikatest2.htm'))
     def test_remote_mp3(self):
-        'parese remote mp3'
+        #'parese remote mp3'
         self.assertTrue(tika.parser.from_file(
             '/input/tests/data/tikatest3.mp3'))
     def test_remote_jpg(self):
-        'parse remote jpg'
+        #'parse remote jpg'
         self.assertTrue(tika.parser.from_file(
             '/input/tests/data/tikatest4.jpg'))
 
